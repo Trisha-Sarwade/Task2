@@ -1,3 +1,5 @@
+addclosestarbtn();
+function addclosestarbtn(){
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -38,6 +40,7 @@ for (i = 0; i < star.length; i++) {
     div.style.backgroundColor = "red";
   }
 }
+}
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
@@ -72,6 +75,7 @@ function newElement() {
       div.style.display = "none";
     }
   }
+  addclosestarbtn();
 }
 
 const paragraph = document.getElementById("UL");
